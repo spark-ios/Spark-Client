@@ -1,0 +1,6 @@
+framework module Pods_Beginner_Constraints {
+  umbrella header "Pods-Beginner-Constraints-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Eureka (4.3.1)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Eureka
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Eureka
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Eureka: 28ea296f06710f6745266b71f17862048941a32d
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 08d718375888bfb3aad22b425dcaec6cca010e93
+
+COCOAPODS: 1.5.3
