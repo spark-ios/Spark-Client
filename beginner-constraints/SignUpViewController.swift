@@ -8,9 +8,14 @@
 
 import UIKit
 import Eureka
+import GenericPasswordRow
+
+
 
 class SignUpViewController: FormViewController {
-
+    var name: String = ""
+    var data: Date? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createSignUpForm()
@@ -20,9 +25,12 @@ class SignUpViewController: FormViewController {
         func createSignUpForm(){
             
             form +++ Section("Personal Details")
+                
                 <<< TextRow(){ row in
-                    row.title = "First Name"
+                    
                     row.placeholder = "Enter text here"
+                    row.tag = "name"
+                    
                 }
                 <<< TextRow(){ row in
                     row.title = "Middle Name"
@@ -64,37 +72,65 @@ class SignUpViewController: FormViewController {
                             cell.titleLabel?.textColor = .red
                         }
             }
-                <<< PasswordRow(){
-                    $0.title = "Password"
-                    $0.placeholder = "And password here"
-            }
-                <<< PasswordRow(){
-                    $0.title = "Confirm Password"
-                    $0.placeholder = "And confirm password here"
-            }
+            
+                <<< GenericPasswordRow("password") {
+                   
+                        $0.placeholder = "Create a password"
+                }
+               
                 <<< ActionSheetRow<String>() {
                     $0.title = "Car Brand"
                     $0.selectorTitle = "Select"
                     $0.options = ["Acura","BMW","Ford",]
                     $0.value = "Acura"    // initially selected
             }
-                <<< TextAreaRow(){
-                    $0.title = "Car Description"
-                    $0.placeholder = "Enter text here"
-            }
+             
+               
+                <<< TextAreaRow("") { row in
+                    //Row setup
+                    row.title = "Car Description"
+                    row.placeholder = "Enter text here"
+                    
+                    }.cellSetup({ (cell, row) in
+                        cell.textView.scrollRangeToVisible(NSMakeRange(cell.textView.text.count - 1, 1))
+                    }).onChange({ (row) in
+                        //Your Change logic
+                        
+                        row.cell.textView.scrollRangeToVisible(NSMakeRange(row.cell.textView.text.count - 1, 1))
+                    })
                 <<< TextRow(){
                     $0.title = "Car Plate"
                     $0.placeholder = "Enter text here"
-            }
-            
+                    }.cellUpdate { cell, row in
+                        cell.textField.textAlignment = .left
+                }
+           +++ Section("")
+           
+            <<< ButtonRow("register") {
+                    $0.title = "Sign up"
+                    $0.cell.backgroundColor = .blue
+                    $0.cell.tintColor = .white
+                
+                    }
+                    .onCellSelection { cell, row in
+                        row.section?.form?.validate()
+                        print("gumana register")
+                        self.showAlert()
+                        
+                }.cellUpdate { cell, row in
+                    cell.imageView?.image = UIImage(named:"mail")
+                }
+            +++ Section("")
             animateScroll = true
             // Leaves 20pt of space between the keyboard and the highlighted row after scrolling to an off screen row
             rowKeyboardSpacing = 20
-            
         }
+    
         
+    @IBAction func showAlert() {
+       print(self.name)
         
-        
+    }
     
     
 
@@ -108,4 +144,10 @@ class SignUpViewController: FormViewController {
     }
     */
 
+}
+extension BaseRow {
+    func selectScrolling(animated: Bool = false) {
+        guard let indexPath = indexPath, let tableView = baseCell?.formViewController()?.tableView ?? (section?.form?.delegate as? FormViewController)?.tableView  else { return }
+        tableView.selectRow(at: indexPath, animated: animated, scrollPosition: .top)
+    }
 }

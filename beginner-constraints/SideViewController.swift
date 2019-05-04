@@ -11,7 +11,10 @@ import MapKit
 
 class SideViewController: UIViewController {
     
-    @IBOutlet weak var labelUsername: UILabel!
+    
+   // @IBOutlet weak var updatelabeluser: UILabel!
+    
+    
     @IBOutlet weak var mapView: MKMapView!
     var sidebarView: SidebarView!
     var blackScreen: UIView!
@@ -20,25 +23,19 @@ class SideViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let name = defaultValues.string(forKey: "username"){
+        let defaultValues = UserDefaults.standard
+       /* if let name = defaultValues.string(forKey: "username"){
             //setting the name to label
-            labelUsername.text = name
+            updatelabeluser.text = name
         }else{
-            print("di gumana")
-        }
-        let mainVC = UIViewController()
+            //send back to login view controller
+        }*/
+        
+        
+       
+    
       
-        
-        let rootController = RootViewController(mainViewController: mainVC, topNavigationLeftImage: UIImage(named: "navi"))
-        let menuVC = MenuViewController()
-        menuVC.view.backgroundColor = .green
-        
-        let drawerVC = DrawerController(rootViewController: rootController, menuController: menuVC)
-        
-        self.addChild(drawerVC)
-        view.addSubview(drawerVC.view)
-        drawerVC.didMove(toParent: self)
+      
         
         
         // set initial location in Honolulu
@@ -46,12 +43,12 @@ class SideViewController: UIViewController {
         
         centerMapOnLocation(location: initialLocation)
     }
+    
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
-                                                  latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
     }
-    
-    
-    
+  
+   
 }

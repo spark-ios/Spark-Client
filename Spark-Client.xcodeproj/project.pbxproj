@@ -10,13 +10,10 @@
 		0F819A0A3BA5EB75B5963ED3 /* Pods_Beginner_Constraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBB98ADFAC1D8301B7E4C97 /* Pods_Beginner_Constraints.framework */; };
 		580A10E421F606E60036F324 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A10E321F606E60036F324 /* ViewController.swift */; };
 		580A10E621F659A90036F324 /* launcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A10E521F659A90036F324 /* launcher.swift */; };
+		584A83F821FA4A9500017545 /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584A83F721FA4A9500017545 /* SideViewController.swift */; };
 		58E7589521F799290012C070 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7589421F799290012C070 /* SignUpViewController.swift */; };
-		58E7589921F8B7810012C070 /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7589821F8B7810012C070 /* SideViewController.swift */; };
 		58E7589B21F8B7FC0012C070 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7589A21F8B7FC0012C070 /* SidebarView.swift */; };
 		58E7589D21F8C34C0012C070 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7589C21F8C34C0012C070 /* EditProfileVC.swift */; };
-		58E758A221F8EDB30012C070 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7589F21F8EDB20012C070 /* RootViewController.swift */; };
-		58E758A321F8EDB30012C070 /* DrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E758A021F8EDB20012C070 /* DrawerController.swift */; };
-		58E758A421F8EDB30012C070 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E758A121F8EDB30012C070 /* MenuViewController.swift */; };
 		ED96FF7E21B025CC00905F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED96FF7D21B025CC00905F77 /* AppDelegate.swift */; };
 		ED96FF8321B025CC00905F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED96FF8121B025CC00905F77 /* Main.storyboard */; };
 		ED96FF8521B025CD00905F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED96FF8421B025CD00905F77 /* Assets.xcassets */; };
@@ -31,13 +28,10 @@
 		580A10E321F606E60036F324 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "beginner-constraints/ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		580A10E521F659A90036F324 /* launcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = launcher.swift; path = "beginner-constraints/launcher.swift"; sourceTree = SOURCE_ROOT; };
 		580A10E821F664DB0036F324 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "../beginner-constraints/en.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		584A83F721FA4A9500017545 /* SideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideViewController.swift; path = "beginner-constraints/SideViewController.swift"; sourceTree = SOURCE_ROOT; };
 		58E7589421F799290012C070 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "beginner-constraints/SignUpViewController.swift"; sourceTree = SOURCE_ROOT; };
-		58E7589821F8B7810012C070 /* SideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideViewController.swift; path = "beginner-constraints/SideViewController.swift"; sourceTree = SOURCE_ROOT; };
 		58E7589A21F8B7FC0012C070 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SidebarView.swift; path = "beginner-constraints/SidebarView.swift"; sourceTree = SOURCE_ROOT; };
 		58E7589C21F8C34C0012C070 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditProfileVC.swift; path = "beginner-constraints/EditProfileVC.swift"; sourceTree = SOURCE_ROOT; };
-		58E7589F21F8EDB20012C070 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = "../../../Downloads/drawer-menu-swift/DrawerMenu/RootViewController.swift"; sourceTree = "<group>"; };
-		58E758A021F8EDB20012C070 /* DrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawerController.swift; path = "../../../Downloads/drawer-menu-swift/DrawerMenu/DrawerController.swift"; sourceTree = "<group>"; };
-		58E758A121F8EDB30012C070 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "../../../Downloads/drawer-menu-swift/DrawerMenu/MenuViewController.swift"; sourceTree = "<group>"; };
 		8CBB98ADFAC1D8301B7E4C97 /* Pods_Beginner_Constraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beginner_Constraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C880AC27A29EE12BDDDE4363 /* Pods-Beginner-Constraints.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beginner-Constraints.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beginner-Constraints/Pods-Beginner-Constraints.release.xcconfig"; sourceTree = "<group>"; };
 		ED96FF7A21B025CC00905F77 /* Beginner-Constraints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beginner-Constraints.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,9 +60,6 @@
 		58E7589E21F8ED670012C070 /* DrawerMenu */ = {
 			isa = PBXGroup;
 			children = (
-				58E758A021F8EDB20012C070 /* DrawerController.swift */,
-				58E758A121F8EDB30012C070 /* MenuViewController.swift */,
-				58E7589F21F8EDB20012C070 /* RootViewController.swift */,
 			);
 			path = DrawerMenu;
 			sourceTree = "<group>";
@@ -115,9 +106,9 @@
 				ED96FF8F21B0262B00905F77 /* CustomViews */,
 				ED96FF7D21B025CC00905F77 /* AppDelegate.swift */,
 				580A10E321F606E60036F324 /* ViewController.swift */,
-				58E7589821F8B7810012C070 /* SideViewController.swift */,
 				58E7589C21F8C34C0012C070 /* EditProfileVC.swift */,
 				ED96FF9421B0286600905F77 /* Constants.swift */,
+				584A83F721FA4A9500017545 /* SideViewController.swift */,
 				580A10E521F659A90036F324 /* launcher.swift */,
 				ED96FF8121B025CC00905F77 /* Main.storyboard */,
 				58E7589A21F8B7FC0012C070 /* SidebarView.swift */,
@@ -172,6 +163,7 @@
 				TargetAttributes = {
 					ED96FF7921B025CC00905F77 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -234,13 +226,19 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Beginner-Constraints/Pods-Beginner-Constraints-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/GenericPasswordRow/GenericPasswordRow.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GenericPasswordRow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -256,17 +254,14 @@
 			files = (
 				58E7589D21F8C34C0012C070 /* EditProfileVC.swift in Sources */,
 				580A10E421F606E60036F324 /* ViewController.swift in Sources */,
-				58E758A321F8EDB30012C070 /* DrawerController.swift in Sources */,
 				58E7589521F799290012C070 /* SignUpViewController.swift in Sources */,
-				58E758A221F8EDB30012C070 /* RootViewController.swift in Sources */,
+				584A83F821FA4A9500017545 /* SideViewController.swift in Sources */,
 				ED96FF9521B0286600905F77 /* Constants.swift in Sources */,
 				ED96FF9321B0266000905F77 /* SATextField.swift in Sources */,
-				58E758A421F8EDB30012C070 /* MenuViewController.swift in Sources */,
 				580A10E621F659A90036F324 /* launcher.swift in Sources */,
 				58E7589B21F8B7FC0012C070 /* SidebarView.swift in Sources */,
 				ED96FF9121B0265300905F77 /* SAButton.swift in Sources */,
 				ED96FF7E21B025CC00905F77 /* AppDelegate.swift in Sources */,
-				58E7589921F8B7810012C070 /* SideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +409,7 @@
 			baseConfigurationReference = 50EA4A5EC05302E6D56965E2 /* Pods-Beginner-Constraints.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: franciscoariel626@icloud.com (YV9G5G44HS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8LY6A3PG8;
 				INFOPLIST_FILE = "Beginner-Constraints/Info.plist";
@@ -422,10 +417,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.seanallen.Beginner-Constraints";
+				PRODUCT_BUNDLE_IDENTIFIER = spark1632723;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_REFLECTION_METADATA_LEVEL = all;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -435,7 +431,7 @@
 			baseConfigurationReference = C880AC27A29EE12BDDDE4363 /* Pods-Beginner-Constraints.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: franciscoariel626@icloud.com (YV9G5G44HS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8LY6A3PG8;
 				INFOPLIST_FILE = "Beginner-Constraints/Info.plist";
@@ -443,10 +439,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.seanallen.Beginner-Constraints";
+				PRODUCT_BUNDLE_IDENTIFIER = spark1632723;
 				PRODUCT_NAME = "Spark-Client";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_REFLECTION_METADATA_LEVEL = all;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

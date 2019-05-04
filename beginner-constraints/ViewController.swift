@@ -9,7 +9,13 @@ import UIKit
 import SVProgressHUD
 import Eureka
 import Alamofire
+import SwiftKeychainWrapper
+import SCLAlertView
 
+let uniqueServiceName = "customServiceName"
+let uniqueAccessGroup = "sharedAccessGroupName"
+let customKeychainWrapperInstance = KeychainWrapper(serviceName: uniqueServiceName, accessGroup: uniqueAccessGroup)
+let backgroundImageView = UIImageView()
 
 class ViewController: UIViewController {
     
@@ -17,18 +23,11 @@ class ViewController: UIViewController {
     let defaultValues = UserDefaults.standard
     @IBOutlet weak var password: SATextField!
     @IBOutlet weak var ssd: SATextField!
-    
+  
     @IBAction func haha(_ sender: SAButton) {
         
         if (ssd.text?.isEmpty)! || (password.text?.isEmpty)!{
-            // create the alert
-            let alert = UIAlertController(title: "Error", message: "Email or Password is empty.", preferredStyle: UIAlertController.Style.alert)
-            
-            // add an action (button)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            
-            // show the alert
-            self.present(alert, animated: true, completion: nil)
+            SCLAlertView().showError("", subTitle: "Email or Password should not be  Empty")
         }
         else{
             //getting the username and password
@@ -52,77 +51,94 @@ class ViewController: UIViewController {
                         if(!(jsonData.value(forKey: "error") as! Bool)){
                             
                             //getting the user from response
-                            let user = jsonData.value(forKey: "user") as? NSDictionary
-                            
+                           let user = jsonData.value(forKey: "username") as! String?
+                           
+                            print("user: \(String(describing: user))")
                             //getting user values
-                            let userId = user?.value(forKey: "id") as? Int
+                           /* let userId = user?.value(forKey: "id") as? Int
                             let userName = user?.value(forKey: "username") as? String
                             let userEmail = user?.value(forKey: "email") as? String
-                            let userPhone = user?.value(forKey: "phone") as? String
+                            let userMobile = user?.value(forKey: "mobile") as? String*/
+                            
+                            self.defaultValues.set(user, forKey: "username")
+                            //saveswiftkeywrapper
+                            
+                            
                             
                             //saving user values to defaults
-                            self.defaultValues.set(userId, forKey: "userid")
+                            /*self.defaultValues.set(userId, forKey: "userid")
                             self.defaultValues.set(userName, forKey: "username")
                             self.defaultValues.set(userEmail, forKey: "useremail")
-                            self.defaultValues.set(userPhone, forKey: "userphone")
-                            UserDefaults.standard.synchronize()
+                            self.defaultValues.set(userMobile, forKey: "userphone")*/
+                           
                             //switching the screen
                             let VC = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! SideViewController
                             self.present(VC, animated: true, completion: nil)
+                            
+                            
                            
                         }else{
                             //error message in case of invalid credential
-                           
-                            let alert = UIAlertController(title: "Error", message: "Invalid username or password", preferredStyle: UIAlertController.Style.alert)
                             
-                            // add an action (button)
-                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                            
-                            // show the alert
-                            self.present(alert, animated: true, completion: nil)
+                           SCLAlertView().showError("Important info", subTitle: "You are great")
                         }
                     }
-            }
+              }
     
     
         }
         
         
     }
-   
-    let backgroundImageView = UIImageView()
+    
     
    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setBackground()
-        //ssd.placeholder = ""
-        //password.placeholder = ""
         
-        let emailImage = UIImage(named:"msg")
-        addLeftImageTo(txtField: ssd, andImage: emailImage!)
-        
-        let passwordImage = UIImage(named:"lock1")
-        addLeftImageTo(txtField: password, andImage: passwordImage!)
-        
-        if defaultValues.string(forKey: "username") != nil{
+          DispatchQueue.main.asyncAfter(deadline: .now()) {
+            if self.defaultValues.string(forKey: "username") != nil{
+            
+            print("redirect to homepage")
             let VC = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! SideViewController
             self.present(VC, animated: true, completion: nil)
             
         }
+        else{
+            print("walang laman")
+        }
+        }
+            let emailImage = UIImage(named:"msg")
+            addLeftImageTo(txtField: ssd, andImage: emailImage!)
+        
+            let passwordImage = UIImage(named:"lock1")
+            addLeftImageTo(txtField: password, andImage: passwordImage!)
+        
+            //let passwordImageright = UIImage(named:"icons8hide")
+            //addRightImageTo(txtField: password, andImage: passwordImageright!)
+       
         
     }
     
     func addLeftImageTo(txtField: SATextField, andImage img: UIImage) {
-        let leftImageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: 30, height: 25))
-        
+        let leftImageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: 29, height: 23))
         let iconContainerView: UIView = UIView(frame:
             CGRect(x: 20, y: 0, width: 30, height: 30))
         iconContainerView.addSubview(leftImageView)
         leftImageView.image = img
         txtField.leftView = leftImageView
         txtField.leftViewMode = .always
+    }
+    
+    func addRightImageTo(txtField: SATextField, andImage img: UIImage) {
+        let leftImageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: 22, height: 22))
+        let iconContainerView: UIView = UIView(frame:
+            CGRect(x: 20, y: 0, width: 30, height: 30))
+        iconContainerView.addSubview(leftImageView)
+        leftImageView.image = img
+        txtField.rightView = leftImageView
+        txtField.rightViewMode = .always
     }
         
      

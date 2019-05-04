@@ -6,5 +6,8 @@ target 'Beginner-Constraints' do
 pod 'SVProgressHUD'
 pod 'Eureka'
 pod 'Alamofire', '~> 4.0'
+pod 'SwiftKeychainWrapper'
+
+pod 'SCLAlertView'
 
 end

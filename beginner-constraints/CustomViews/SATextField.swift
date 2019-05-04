@@ -39,7 +39,7 @@ class SATextField: UITextField {
             [NSAttributedString.Key.foregroundColor: UIColor(white: 1.0, alpha: 0.50),
              NSAttributedString.Key.font: placeholderFont])
         
-        let indentView        = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        let indentView        = UIView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
         leftView              = indentView
         leftViewMode          = .always
     }
@@ -59,7 +59,7 @@ class SATextField: UITextField {
         
         path.move(to: startingPoint)
         path.addLine(to: endingPoint)
-        path.lineWidth = 2.0
+        path.lineWidth = 3.0
         
         tintColor.setStroke()
         
