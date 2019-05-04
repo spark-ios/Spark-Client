@@ -1,24 +1,37 @@
 PODS:
   - Alamofire (4.8.1)
   - Eureka (4.3.1)
+  - GenericPasswordRow (3.0.0):
+    - Eureka (~> 4.0)
+  - SCLAlertView (0.8)
   - SVProgressHUD (2.2.5)
+  - SwiftKeychainWrapper (3.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - Eureka
+  - GenericPasswordRow (~> 3.0)
+  - SCLAlertView
   - SVProgressHUD
+  - SwiftKeychainWrapper
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Eureka
+    - GenericPasswordRow
+    - SCLAlertView
     - SVProgressHUD
+    - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Eureka: 28ea296f06710f6745266b71f17862048941a32d
+  GenericPasswordRow: 27a52c727c47b2e4d50c2295d1cc7d32c5883e70
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftKeychainWrapper: 82c4c02cdc36f9a24f7edfcaab3e336401caa1a1
 
-PODFILE CHECKSUM: 08d718375888bfb3aad22b425dcaec6cca010e93
+PODFILE CHECKSUM: 4adefbf4ad8402931f42c2bb70080cdd139949aa
 
 COCOAPODS: 1.5.3

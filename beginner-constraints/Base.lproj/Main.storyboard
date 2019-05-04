@@ -21,7 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9B-rB-fgw" customClass="SAButton" customModule="Beginner_Constraints" customModuleProvider="target">
                                 <rect key="frame" x="30" y="557" width="315" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="n96-EG-rb8"/>
+                                    <constraint firstAttribute="height" constant="50" id="rTV-Wn-Mun"/>
                                 </constraints>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
@@ -62,7 +62,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCg-9d-Mv8">
-                                <rect key="frame" x="55.666666666666671" y="626.33333333333337" width="151.33333333333331" height="19.666666666666629"/>
+                                <rect key="frame" x="56" y="624.66666666666663" width="151" height="19.666666666666629"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Don't have an account?">
                                         <attributes>
@@ -74,7 +74,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ik-kU-8gO">
-                                <rect key="frame" x="209" y="621" width="97" height="30"/>
+                                <rect key="frame" x="209" y="618" width="97" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Sign up here">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,23 +86,22 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7ik-kU-8gO" firstAttribute="top" secondItem="S9B-rB-fgw" secondAttribute="bottom" constant="14" id="58i-tB-lLV"/>
-                            <constraint firstItem="S9B-rB-fgw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="75o-j9-8UP"/>
+                            <constraint firstItem="7ik-kU-8gO" firstAttribute="top" secondItem="S9B-rB-fgw" secondAttribute="bottom" constant="11" id="6N5-5v-Mpz"/>
                             <constraint firstAttribute="trailing" secondItem="j1F-Li-lge" secondAttribute="trailing" constant="30" id="7dD-i2-aS4"/>
+                            <constraint firstItem="S9B-rB-fgw" firstAttribute="trailing" secondItem="j1F-Li-lge" secondAttribute="trailing" id="APl-LB-9nT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7ik-kU-8gO" secondAttribute="trailing" constant="69" id="Dkd-cp-KcL"/>
                             <constraint firstItem="j1F-Li-lge" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Moc-XZ-Kx4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S9B-rB-fgw" secondAttribute="bottom" constant="171" id="P5K-H2-QKw"/>
                             <constraint firstItem="7ik-kU-8gO" firstAttribute="leading" secondItem="yCg-9d-Mv8" secondAttribute="trailing" constant="2" id="Qw5-IN-5NO"/>
                             <constraint firstItem="qgd-le-aNO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="V3A-um-B1E"/>
                             <constraint firstItem="Asg-ha-NLa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-156" id="YiB-Jc-5Fh"/>
-                            <constraint firstItem="S9B-rB-fgw" firstAttribute="top" secondItem="j1F-Li-lge" secondAttribute="bottom" constant="52" id="hMi-Fv-nRA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7ik-kU-8gO" secondAttribute="bottom" constant="127" id="jPW-VJ-Psk"/>
+                            <constraint firstItem="S9B-rB-fgw" firstAttribute="leading" secondItem="j1F-Li-lge" secondAttribute="leading" id="jYH-cs-DAW"/>
                             <constraint firstItem="7ik-kU-8gO" firstAttribute="leading" secondItem="yCg-9d-Mv8" secondAttribute="trailing" constant="2" id="lK5-A4-dvk"/>
                             <constraint firstItem="j1F-Li-lge" firstAttribute="top" secondItem="qgd-le-aNO" secondAttribute="bottom" constant="20" id="s4G-p5-g46"/>
                             <constraint firstItem="7ik-kU-8gO" firstAttribute="baseline" secondItem="yCg-9d-Mv8" secondAttribute="baseline" id="tbW-2e-jiO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qgd-le-aNO" secondAttribute="trailing" constant="30" id="tio-Pz-k1m"/>
                             <constraint firstItem="7ik-kU-8gO" firstAttribute="centerY" secondItem="yCg-9d-Mv8" secondAttribute="centerY" id="vvt-om-eLZ"/>
-                            <constraint firstAttribute="trailing" secondItem="S9B-rB-fgw" secondAttribute="trailing" constant="30" id="wCd-oH-U6B"/>
+                            <constraint firstItem="S9B-rB-fgw" firstAttribute="top" secondItem="j1F-Li-lge" secondAttribute="bottom" constant="52" id="x5P-0R-FJr"/>
                             <constraint firstItem="Asg-ha-NLa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-3" id="zj4-vG-LYO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
