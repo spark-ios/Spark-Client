@@ -1,17 +1,14 @@
 PODS:
-  - Alamofire (4.8.1)
-  - Eureka (4.3.1)
-  - GenericPasswordRow (3.0.0):
-    - Eureka (~> 4.0)
-  - SCLAlertView (0.8)
+  - Alamofire (4.8.2)
+  - Eureka (5.0.0)
+  - SCLAlertView (0.8.1)
   - SVProgressHUD (2.2.5)
-  - SwiftKeychainWrapper (3.2.0)
+  - SwiftKeychainWrapper (3.3.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.0)
-  - Eureka
-  - GenericPasswordRow (~> 3.0)
-  - SCLAlertView
+  - Alamofire
+  - Eureka (~> 5.0)
+  - SCLAlertView (from `https://github.com/vikmeup/SCLAlertView-Swift.git`)
   - SVProgressHUD
   - SwiftKeychainWrapper
 
@@ -19,19 +16,25 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Eureka
-    - GenericPasswordRow
-    - SCLAlertView
     - SVProgressHUD
     - SwiftKeychainWrapper
 
+EXTERNAL SOURCES:
+  SCLAlertView:
+    :git: https://github.com/vikmeup/SCLAlertView-Swift.git
+
+CHECKOUT OPTIONS:
+  SCLAlertView:
+    :commit: 86ea7613c99cd4896765fabfa773b39b40bc8590
+    :git: https://github.com/vikmeup/SCLAlertView-Swift.git
+
 SPEC CHECKSUMS:
-  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  Eureka: 28ea296f06710f6745266b71f17862048941a32d
-  GenericPasswordRow: 27a52c727c47b2e4d50c2295d1cc7d32c5883e70
-  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Eureka: 0f64f477ec8ef6201c6fec143d60ff5c201cf654
+  SCLAlertView: 9fea8ac145c0bd4989ef6abe1d3859b48f458986
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  SwiftKeychainWrapper: 82c4c02cdc36f9a24f7edfcaab3e336401caa1a1
+  SwiftKeychainWrapper: ef5ad793bc0e08e24a5913f28345b8f7bc8e4123
 
-PODFILE CHECKSUM: 4adefbf4ad8402931f42c2bb70080cdd139949aa
+PODFILE CHECKSUM: 9bdf2ffefc2b60cbb88dbe6620929b6daf9b2f43
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.2

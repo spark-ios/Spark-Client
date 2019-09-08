@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1010"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ED96FF7921B025CC00905F77"
-               BuildableName = "Spark-Client.app"
-               BlueprintName = "Beginner-Constraints"
-               ReferencedContainer = "container:Spark-Client.xcodeproj">
+               BlueprintIdentifier = "7286128413234A52AEAB1B0A18C0CC61"
+               BuildableName = "Pods_Beginner_Constraints.framework"
+               BlueprintName = "Pods-Beginner-Constraints"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ED96FF7921B025CC00905F77"
-            BuildableName = "Spark-Client.app"
-            BlueprintName = "Beginner-Constraints"
-            ReferencedContainer = "container:Spark-Client.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ED96FF7921B025CC00905F77"
-            BuildableName = "Spark-Client.app"
-            BlueprintName = "Beginner-Constraints"
-            ReferencedContainer = "container:Spark-Client.xcodeproj">
+            BlueprintIdentifier = "7286128413234A52AEAB1B0A18C0CC61"
+            BuildableName = "Pods_Beginner_Constraints.framework"
+            BlueprintName = "Pods-Beginner-Constraints"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ED96FF7921B025CC00905F77"
-            BuildableName = "Spark-Client.app"
-            BlueprintName = "Beginner-Constraints"
-            ReferencedContainer = "container:Spark-Client.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

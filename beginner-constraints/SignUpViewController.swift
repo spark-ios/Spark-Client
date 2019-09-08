@@ -8,8 +8,6 @@
 
 import UIKit
 import Eureka
-import GenericPasswordRow
-
 
 
 class SignUpViewController: FormViewController {
@@ -72,11 +70,6 @@ class SignUpViewController: FormViewController {
                             cell.titleLabel?.textColor = .red
                         }
             }
-            
-                <<< GenericPasswordRow("password") {
-                   
-                        $0.placeholder = "Create a password"
-                }
                
                 <<< ActionSheetRow<String>() {
                     $0.title = "Car Brand"

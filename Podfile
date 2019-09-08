@@ -4,10 +4,11 @@
 target 'Beginner-Constraints' do
     use_frameworks!
 pod 'SVProgressHUD'
-pod 'Eureka'
-pod 'Alamofire', '~> 4.0'
+pod 'Eureka', '~> 5.0'
+pod 'GenericPasswordRow', '~> 3.0'
+pod 'Alamofire'
 pod 'SwiftKeychainWrapper'
 
-pod 'SCLAlertView'
+pod 'SCLAlertView', :git => 'https://github.com/vikmeup/SCLAlertView-Swift.git'
 
 end
